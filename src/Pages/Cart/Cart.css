@@ -1,0 +1,287 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.cart{
+    margin-top: 100px;
+    font-family: 'Outfit',sans-serif;
+}
+.cart-items-title{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: grey;
+    font-size: max(1vw,12px);
+}
+.cart-items-item{
+    margin: 10px 0px;
+    color: black;
+}
+.cart-items-item img{
+    width: 50px;
+}
+.cart hr{
+    height: 1px;
+    background-color: #e2e2e2;
+    border: none;
+}
+.cart-items-item .cross{
+    cursor: pointer;
+}
+.cart-bottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw,20px);
+}
+.cart-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+.cart-total hr{
+    margin: 10px 0px;
+}
+.cart-total button{
+    border: none;
+    color: white;
+    background-color: tomato;
+    width: max(15vw,200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cart-promocode{
+    flex: 1;
+}
+.cart-promocode p{
+    color: #555;
+}
+.cart-promocode-input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
+.cart-promocode-input input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.cart-promocode-input button{
+    width: max(10vw,150px);
+    padding: 12px 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+@media (max-width:750px){
+    .cart-bottom{
+        flex-direction: column-reverse;
+    }
+    .cart-promocode{
+        justify-content: start;
+    }
+} */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.cart {
+    margin-top: 80px; /* Adjusted margin */
+    font-family: 'Outfit', sans-serif;
+    padding: 20px; /* Added padding for better spacing */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: #555; /* Darker text for better readability */
+    font-size: max(1vw, 14px); /* Slightly larger font size */
+    padding: 10px 0; /* Added padding */
+    border-bottom: 1px solid #e2e2e2; /* Bottom border for separation */
+}
+
+.cart-items-item {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    margin: 15px 0; /* Adjusted margin */
+    color: #333; /* Darker text for better readability */
+    padding: 10px 0; /* Added padding */
+    border-bottom: 1px solid #e2e2e2; /* Bottom border for separation */
+}
+
+.cart-items-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Ensure the image fits well */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.cart-items-item .cross {
+    cursor: pointer;
+    color: #ff4c4c; /* Red color for the cross icon */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.cart-items-item .cross:hover {
+    color: tomato; /* Highlight color on hover */
+}
+
+.cart hr {
+    height: 1px;
+    background-color: #e2e2e2;
+    border: none;
+    margin: 10px 0; /* Adjusted margin */
+}
+
+.cart-bottom {
+    margin-top: 50px; /* Adjusted margin */
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw, 20px);
+}
+
+.cart-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    font-size: 16px; /* Larger font size for better readability */
+}
+
+.cart-total hr {
+    margin: 10px 0;
+}
+
+.cart-total button {
+    border: none;
+    color: white;
+    background-color: tomato;
+    width: 100%; /* Full width for better usability */
+    max-width: 300px; /* Limit maximum width */
+    padding: 12px 0;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.cart-total button:hover {
+    background-color: #ff4c4c; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.cart-total button:active {
+    transform: translateY(0); /* Reset lift on click */
+}
+
+.cart-promocode {
+    flex: 1;
+}
+
+.cart-promocode p {
+    color: #555;
+    font-size: 16px; /* Larger font size for better readability */
+}
+
+.cart-promocode-input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Added padding */
+    border: 1px solid #e2e2e2; /* Subtle border */
+}
+
+.cart-promocode-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px; /* Adjusted padding */
+    font-size: 16px;
+    width: 100%; /* Full width for better usability */
+}
+
+.cart-promocode-input button {
+    width: max(10vw, 150px);
+    padding: 12px 20px; /* Adjusted padding */
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.cart-promocode-input button:hover {
+    background-color: #333; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.cart-promocode-input button:active {
+    transform: translateY(0); /* Reset lift on click */
+}
+
+/* Responsive Design */
+@media (max-width: 750px) {
+    .cart {
+        margin-top: 50px; /* Adjusted margin */
+        padding: 15px; /* Adjusted padding */
+    }
+
+    .cart-items-title {
+        grid-template-columns: 1fr 1fr 1fr; /* Simplified grid for smaller screens */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .cart-items-item {
+        grid-template-columns: 1fr 1fr 1fr; /* Simplified grid for smaller screens */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .cart-items-item img {
+        width: 40px; /* Smaller image size */
+        height: 40px;
+    }
+
+    .cart-bottom {
+        flex-direction: column-reverse;
+        gap: 30px; /* Adjusted gap */
+    }
+
+    .cart-total button {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .cart-promocode-input {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 10px; /* Adjusted gap */
+    }
+
+    .cart-promocode-input button {
+        width: 100%; /* Full width on smaller screens */
+    }
+}

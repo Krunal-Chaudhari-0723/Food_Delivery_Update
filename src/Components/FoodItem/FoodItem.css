@@ -1,0 +1,186 @@
+/* .food-item{
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000015;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+}
+.food-item-image{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.food-item-info{
+    padding: 20px;
+    background-color: white;
+}
+.food-item-name-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.food-item-name-rating p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.food-item-name-rating img{
+    width: 70px;
+}
+.food-item-description{
+    color: #676767;
+    font-size: 12px;
+}
+.food-item-price{
+    color: tomato;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.food-item-image-containor{
+    position: relative;
+}
+.food-item-image-containor .add{
+    width: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.food-item-counter{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+}
+.food-item-counter img{
+    width: 40px;
+} */
+
+/* Base styles for the food item */
+.food-item {
+    width: 100%;
+    max-width: 400px; /* Limit maximum width for better responsiveness */
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Use rgba for better shadow control */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s;
+    overflow: hidden; /* Ensure child elements respect border-radius */
+}
+
+.food-item:hover {
+    transform: translateY(-5px); /* Add hover effect for interactivity */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container and image styles */
+.food-item-image-container {
+    position: relative;
+    aspect-ratio: 16 / 9; /* Maintain aspect ratio for responsive images */
+}
+
+.food-item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the container without distortion */
+    border-radius: 15px 15px 0 0;
+}
+
+/* Add button styles */
+.food-item-image-container .add {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.food-item-image-container .add:hover {
+    transform: scale(1.1); /* Add hover effect for the button */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Food item info section */
+.food-item-info {
+    padding: 20px;
+    background-color: white;
+}
+
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.food-item-name-rating p {
+    font-size: clamp(16px, 2vw, 18px); /* Responsive font size */
+    font-weight: 500;
+    margin: 0; /* Remove default margin */
+}
+
+.food-item-name-rating img {
+    width: 70px;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.food-item-description {
+    color: #676767;
+    font-size: clamp(12px, 1.5vw, 14px); /* Responsive font size */
+    line-height: 1.4; /* Improve readability */
+    margin: 10px 0;
+}
+
+.food-item-price {
+    color: tomato;
+    font-size: clamp(20px, 2.5vw, 22px); /* Responsive font size */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Counter styles */
+.food-item-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-item-counter img {
+    width: 30px; /* Slightly smaller for better proportions */
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.food-item-counter img:hover {
+    transform: scale(1.1); /* Add hover effect for counter buttons */
+}
+
+/* Animation for fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

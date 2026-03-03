@@ -1,0 +1,322 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('banner111.jpg') no-repeat ;
+    background-size: contain;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+    font-family:'Outfit',sans-serif;
+}
+.header-contents h2{
+    font-weight: 500;
+    color:white;
+    font-size: 55px;
+    margin-inline: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 3s steps(22) forwards,
+    blink 1s step-end infinite;
+    cursor: none;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes blink {
+    50%{
+        border-color: transparent;
+        
+    }
+}
+.header-contents p{
+    color:black;
+    font-size: 100%;
+    
+}
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    cursor: pointer;
+}
+@media (max-width:1050px){
+   
+    .header-contents{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px){
+    
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+
+} */
+ /* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('BG2.jpg') no-repeat ;
+    background-size: contain;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    box-shadow: #747474;
+    animation: changeImage 20s linear infinite;
+
+}
+ @keyframes changeImage{
+    0%{
+        background-image: url(BG1.jpg);
+    }
+    25%{
+        background-image: url(BG2.jpg);
+    }
+    50%{
+        background-image: url(BG3.jpg);
+    }
+    
+ }
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+    font-family:'Outfit',sans-serif;
+}
+.header-contents h2{
+    font-weight: 500;
+    color:white;
+    font-size: 55px;
+    margin-inline: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 3s steps(22) forwards,
+    blink 1s step-end infinite;
+    cursor: none;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes blink {
+    50%{
+        border-color: transparent;
+        
+    }
+}
+.header-contents p{
+    color:black;
+    font-size: 100%;
+    
+}
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    cursor: pointer;
+}
+@media (max-width:1050px){
+   
+    .header-contents{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px){
+    
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url('BG2.jpg') no-repeat;
+    background-size: contain;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+    animation: changeImage 20s linear infinite;
+    border-radius: 15px; /* Rounded corners for modern look */
+    overflow: hidden; /* Ensures content stays within rounded corners */
+}
+
+@keyframes changeImage {
+    
+    50% { background-image: url(bg.png); }
+    
+    25% { background-image: url(BG2.jpg); }
+    25% { background-image: url(BG3.jpg); }
+    25% { background-image: url(BG4.jpg); }
+    25% { background-image: url(BG5.jpg); }
+    25%{ background-image: url(BG6.jpg);}
+    25%{ background-image: url(BG7.jpg);}
+    25%{ background-image: url(BG8.jpg);}
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+    font-family: 'Outfit', sans-serif;
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color: white;
+    font-size: max(2.5vw, 24px); /* Responsive font size */
+    margin-inline: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 3s steps(22) forwards, blink 1s step-end infinite;
+    cursor: none;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.header-contents h2 {
+    color: white; /* Changed to white for better contrast */
+    font-size: max(3.2vw, 14px); /* Responsive font size */
+    line-height: 1.6; /* Improved readability */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header-contents button {
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.header-contents button:hover {
+    background-color: #ff6347; /* Tomato color on hover */
+    color: white;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1050px) {
+    .header-contents {
+        max-width: 60%; /* Adjusted for smaller screens */
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        height: 50vw; /* Adjusted height for smaller screens */
+    }
+
+    .header-contents {
+        max-width: 80%; /* More space for content on small screens */
+        bottom: 5%; /* Adjusted position */
+    }
+
+    .header-contents p {
+        display: block; /* Show paragraph on smaller screens */
+        font-size: max(1.5vw, 12px); /* Adjusted font size */
+    }
+
+    .header-contents button {
+        padding: 2vw 4vw; /* Larger button for touch devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 60vw; /* Further adjusted height for mobile */
+    }
+
+    .header-contents h2 {
+        font-size: max(4vw, 20px); /* Smaller font size for mobile */
+    }
+
+    .header-contents p {
+        font-size: max(1.8vw, 12px); /* Smaller font size for mobile */
+    }
+
+    .header-contents button {
+        padding: 3vw 6vw; /* Larger button for mobile */
+    }
+}
+
+

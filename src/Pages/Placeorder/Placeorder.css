@@ -1,0 +1,154 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.place-order{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+    font-family: 'Outfit',sans-serif;
+}
+.place-order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+.place-order-left .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.place-order-left input{
+    margin-bottom: 15px;
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: tomato;
+}
+.place-order-left .multi-field{
+    display: flex;
+    gap: 10px;
+}
+.place-order-right{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+.place-order .cart-total button{
+    margin-top: 30px;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.place-order {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px; /* Reduced gap for better spacing */
+    margin-top: 50px; /* Adjusted margin */
+    padding: 20px; /* Added padding for better spacing */
+    font-family: 'Outfit', sans-serif;
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.place-order-left {
+    width: 100%;
+    max-width: 500px; /* Adjusted max-width */
+}
+
+.place-order-left .title {
+    font-size: 28px; /* Slightly smaller font size */
+    font-weight: 600;
+    margin-bottom: 30px; /* Reduced margin */
+    color: #333333; /* Darker text for better readability */
+}
+
+.place-order-left input {
+    margin-bottom: 15px;
+    width: 96%; /* Full width for better responsiveness */
+    padding: 10px; /* Increased padding for better usability */
+    border: 1px solid #e0e0e0; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.place-order-left input:focus {
+    border-color: tomato; /* Highlight border on focus */
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.2); /* Soft glow on focus */
+    outline: none; /* Remove default outline */
+}
+
+.place-order-left .multi-field {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.place-order-left .multi-field input {
+    flex: 1; /* Allow inputs to grow and fill space */
+    min-width: 150px; /* Minimum width for smaller screens */
+}
+
+.place-order-right {
+    width: 100%;
+    max-width: 500px; /* Adjusted max-width */
+}
+
+.place-order-right .cart-total {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.place-order-right .cart-total button {
+    margin-top: 20px; /* Adjusted margin */
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    background-color: tomato; /* Vibrant button color */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.place-order-right .cart-total button:hover {
+    background-color: #ff4c4c; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.place-order-right .cart-total button:active {
+    transform: translateY(0); /* Reset lift on click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .place-order {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 20px; /* Reduced gap */
+        margin-top: 30px; /* Adjusted margin */
+        padding: 15px; /* Adjusted padding */
+    }
+
+    .place-order-left .title {
+        font-size: 24px; /* Smaller font size for smaller screens */
+        margin-bottom: 20px; /* Reduced margin */
+    }
+
+    .place-order-left input {
+        padding: 10px; /* Adjusted padding */
+    }
+
+    .place-order-right .cart-total {
+        padding: 15px; /* Adjusted padding */
+    }
+
+    .place-order-right .cart-total button {
+        padding: 10px; /* Adjusted padding */
+    }
+}
